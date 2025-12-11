@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6666999771531225384}
   - component: {fileID: 5486649109798231761}
   - component: {fileID: 526518942654721296}
+  - component: {fileID: 5525974360646471910}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Jugador
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5454393408607326364}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 4, z: 2}
+  m_LocalScale: {x: 1, y: 5, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -127,4 +128,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limiteX: 23
-  VelocidadPaddle: 5
+  VelocidadPaddle: 35
+--- !u!114 &5525974360646471910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5454393408607326364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98bb8ad90da289f4e98b217eea1c4b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radio: 1
+  mantenerEnPantalla: 0
+  estaEnPantalla: 1
+  anchoCamara: 0
+  altoCamara: 0
+  salioDerecha: 0
+  salioIzquierda: 0
+  salioArriba: 0
+  salioAbajo: 0

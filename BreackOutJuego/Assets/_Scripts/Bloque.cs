@@ -1,25 +1,46 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Bloque : MonoBehaviour
 {
     public int resistencia = 1;
+    public UnityEvent AumentarPuntuaje;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (resistencia <= 0)
+        if (collision.gameObject.tag == "Bola")
         {
-            Destroy(this.gameObject);
+            RebotarBola(collision);
         }
     }
+
+    public virtual void RebotarBola(Collision collision)
+    {
+        Vector3 direccion = collision.contacts[0].point - transform.position;
+        direccion = direccion.normalized;
+        collision.rigidbody.velocity = collision.gameObject.GetComponent<Bola>().velocidadBola * direccion;
+        resistencia--;
+    }
+
+     // Start is called before the first frame update
+      void Start()
+      {
+
+      }
+
+      // Update is called once per frame
+      void Update()
+      {
+          if (resistencia <= 0)
+          {
+            AumentarPuntuaje.Invoke();  
+            Destroy(this.gameObject);
+          }
+      }
+    
 
     public virtual void RebotarBola()
     {

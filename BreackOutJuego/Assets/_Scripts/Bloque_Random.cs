@@ -14,5 +14,10 @@ public class Bloque_Random : Bloque
         Debug.Log(resistencia);
     }
 
+    public override void RebotarBola(Collision collision)
+    {
+        base.RebotarBola(collision);
+    }
+
 
 }

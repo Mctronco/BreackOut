@@ -10,5 +10,10 @@ public class Bloque_Plastico : Bloque
         resistencia = 2;
     }
 
-   
+    public override void RebotarBola(Collision collision)
+    {
+        base.RebotarBola(collision);
+    }
+
+
 }
