@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4682109463535692520}
   - component: {fileID: 3648052366608366552}
   - component: {fileID: 600013525449055127}
-  - component: {fileID: 5028882742322625416}
   m_Layer: 0
   m_Name: Bloque_PorDos
   m_TagString: Untagged
@@ -142,16 +141,5 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5028882742322625416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8946249553628850393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e7724237ad65634082b91273ca77ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  opciones: {fileID: 11400000, guid: 83bb7e211ec4fb147b6fa26fd4a509c6, type: 2}
+  opciones_SO: {fileID: 11400000, guid: 83bb7e211ec4fb147b6fa26fd4a509c6, type: 2}
+  NivelDificultad: 0

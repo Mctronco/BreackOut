@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using static Opciones;
 
 public class Bloque : MonoBehaviour
 {
     public int resistencia = 1;
     public UnityEvent AumentarPuntuaje;
+    public Opciones opciones_SO;
+    public dificultad NivelDificultad;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -16,6 +19,24 @@ public class Bloque : MonoBehaviour
             RebotarBola(collision);
         }
     }
+
+    public void CambioDeResistencia(int facil, int medio, int dificil)
+    {
+        if (opciones_SO != null)
+        {
+            if (opciones_SO.NivelDificultad == Opciones.dificultad.facil)
+                resistencia = facil;
+            else if (opciones_SO.NivelDificultad == Opciones.dificultad.normal)
+                resistencia = medio;
+            else if (opciones_SO.NivelDificultad == Opciones.dificultad.dificil)
+                resistencia = dificil;
+        }
+        else
+        {
+            resistencia = 1;
+        }
+    }
+        
 
     public virtual void RebotarBola(Collision collision)
     {
@@ -28,8 +49,8 @@ public class Bloque : MonoBehaviour
      // Start is called before the first frame update
       void Start()
       {
-
-      }
+        CambioDeResistencia(1, 2, 3);
+    }
 
       // Update is called once per frame
       void Update()

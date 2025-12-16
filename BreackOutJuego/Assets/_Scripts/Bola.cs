@@ -13,9 +13,11 @@ public class Bola : MonoBehaviour
     Rigidbody rigidbody;
     private ControlBordes control;
     public UnityEvent BolaDestruida;
+    public Opciones opciones_SO;
 
     private void Awake()
     {
+        velocidadBola = opciones_SO.velocidadBola;
         control = GetComponent<ControlBordes>();
     }
 

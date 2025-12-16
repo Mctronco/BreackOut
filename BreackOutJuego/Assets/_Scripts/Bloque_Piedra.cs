@@ -7,7 +7,8 @@ public class Bloque_Piedra : Bloque
     // Start is called before the first frame update
     void Start()
     {
-        resistencia = 5;
+        //resistencia = 5;
+        CambioDeResistencia(5, 10, 15);
     }
 
     public override void RebotarBola(Collision collision)
