@@ -7,7 +7,8 @@ public class Bloque_PorDos : Bloque
     // Start is called before the first frame update
     void Start()
     {
-        resistencia = 7; 
+        //resistencia = 7; 
+        CambioDeResistencia(7, 14, 21);
     }
 
     public override void RebotarBola(Collision collision)

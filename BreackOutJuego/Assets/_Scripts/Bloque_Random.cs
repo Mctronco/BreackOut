@@ -9,7 +9,7 @@ public class Bloque_Random : Bloque
     void Start()
     {
         int numeroRandom = 0;
-        numeroRandom = Random.Range(0, 7);
+        numeroRandom = Random.Range(1, 20);
         resistencia = numeroRandom;
         Debug.Log(resistencia);
     }

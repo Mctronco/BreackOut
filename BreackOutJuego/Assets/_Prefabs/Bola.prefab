@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 771550472888354899}
   - component: {fileID: -6761099085250906951}
   - component: {fileID: 1283402637}
-  - component: {fileID: 3672510067688356694}
   m_Layer: 0
   m_Name: Bola
   m_TagString: Bola
@@ -144,6 +143,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  opciones_SO: {fileID: 11400000, guid: 83bb7e211ec4fb147b6fa26fd4a509c6, type: 2}
 --- !u!114 &1283402637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,16 +165,3 @@ MonoBehaviour:
   salioIzquierda: 0
   salioArriba: 0
   salioAbajo: 0
---- !u!114 &3672510067688356694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9106117950296748510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6faf9314096e7d4ba05d1087a15e560, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  opciones: {fileID: 11400000, guid: 83bb7e211ec4fb147b6fa26fd4a509c6, type: 2}
